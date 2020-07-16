@@ -2,6 +2,7 @@
 
 $cursive: 'Pacifico', cursive ; 
 $open:'Open Sans Condensed', sans-serif;
+$titles:'Lexend Tera', sans-serif;
 
 // colors
 
@@ -410,6 +411,228 @@ justify-content: center;
 }
 
 //////////////
+// new desing
+.Projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   // background:$golden;
+   
+    
+ @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+
+    justify-content: center;
+     flex-direction: column;
+     align-items: center;
+    // justify-content: center;
+    // margin-left: 50px;
+     margin-bottom: 0px;
+    
+    } 
+}
+
+.titlesSection{
+    font-family:$titles;
+    font-size:40px;
+    margin-right: 30px;
+    //margin-top: 80px;
+    
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+       font-size:30px;
+       margin-top:0px;
+       margin-right: 0px;
+      }
+}
+
+// Mar y Sol
+
+
+
+.marysol{
+//margin-right: 200px;
+display: flex;
+margin-bottom: 30px;
+@media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+          
+       }
+
+}
+
+ .marysol img{
+        width: 400px;
+        margin-right: 50px; 
+        margin-top: 30px;  
+        margin-left: 500px; 
+        @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        width: 300px;
+        margin-right: 0px;  
+        margin-left: 0px;  
+        }
+ }
+
+.marysolLetter{
+    margin-right:500px;
+@media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+    margin-left:0px;
+    margin-right:0px;
+    
+   }
+}
+
+
+.marysolD{
+    color:$grey2;
+    font-size: 16px;
+    font-family:$open;
+    text-align: center;
+    //background-color: $golden;
+    
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        font-size:16px;
+        margin-top: 30px;
+        margin-bottom:30px;
+        margin-right: 10px;
+        margin-left:10px;
+        justify-content: justify;
+       }
+}
+
+.linkVisit:hover{
+    color:$dorado;
+    text-decoration: underline;
+    transition: 0.5s linear;
+    //style={{color:'#fff', textDecoration:'underline', textDecorationStyle:'solid'}}
+}
+
+
+//fusion
+
+
+
+.lostFusion{
+    margin-right: 80px;
+    display: flex;
+    margin-bottom: 30px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        margin-right: 0px;  
+           }
+    
+    }
+    
+     .lostFusion img{
+            width: 410px;
+            //margin-right: 90px; 
+            margin-top: 30px;  
+            margin-left: 23px; 
+            @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+            width: 300px;
+            margin-right: 0px;  
+            margin-left: 0px;  
+            }
+     }
+    
+    .lostFusionLetter{
+        //margin-right:400px;
+       // margin-left: 100px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        margin-left:0px;
+        margin-right:0px;
+        
+       }
+    }
+    
+    
+    .lostFusionD{
+        color:$grey2;
+        font-size: 16px;
+        font-family:$open;
+        text-align: center;
+        //background-color: $golden;
+        
+        @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+            font-size:16px;
+            margin-top: 30px;
+            margin-bottom:30px;
+            margin-right: 10px;
+            margin-left:10px;
+            justify-content: justify;
+           }
+    }
+    
+    .linkVisit:hover{
+        color:$dorado;
+        text-decoration: underline;
+        transition: 0.5s linear;
+        //style={{color:'#fff', textDecoration:'underline', textDecorationStyle:'solid'}}
+    }
+
+
+
+
+
+/////fusion
+
+
+
+
+.quince{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#ebebeb;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+
+        justify-content: center;
+         flex-direction: column;
+         align-items: center;
+        // justify-content: center;
+        // margin-left: 50px;
+         margin-bottom: 0px;
+        
+        } 
+}
+
+.quinceDescr{
+    color:$grey3;
+    font-size: 30px;
+    font-family:$open;
+    justify-content: justify;
+    margin-left: 10px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        font-size:22px;
+        margin-top: 30px;
+        margin-left: 0px;
+       }
+}
+
+.quince-img{
+    margin-left: 200px;
+    
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+      margin-left: 0px;
+      margin-bottom: 30px;
+            
+           }
+    
+    }
+    
+    .quince-img img{
+      // align-self: center;
+        margin-right: 50px;
+        margin-top: 20px;
+        width: 550px;
+        @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        width:270px ;
+      //  margin-left: 100px;
+        height: auto;
+        
+            
+           }
+    }
+
+
+
+
 
 
 ///////Portfolio///
@@ -421,7 +644,8 @@ justify-content: center;
     font-weight: 400;
 }
 
-.portfolio h4{
+.portfolio h2{
+    padding-top: 10px;
     color:#fff
 }
 

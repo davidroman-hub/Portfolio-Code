@@ -145,8 +145,71 @@ const NewHome  = () => {
                 </div>
         </div> 
 
+        <h3 className="text-center" style={{fontFamily:'Open Sans Condensed,sans-serif'}}>PROJECTS</h3> 
+        <div className='figure2'/>
 
         {/* PORTFOLIO */}
+        <div className="portfolio" id='projects'>
+            <div className="Projects">
+
+              {/* //MarySol */}
+                      <div className="marysol">
+                          <img src="https://res.cloudinary.com/dm8dxwvix/image/upload/v1594912435/Portfolio/marysol_fxgzeh.png" className="img img-fluent" alt='Marysol'/>          
+                      </div>
+                      <div className="marysolLetter">
+                      <h2 className=" text-center" style={{color:'#fff'}}> Restaurant <br/> Mar y Sol </h2>
+                      <p className="marysolD text-center">
+                      E-commerce MERN App, using Bootstrap 4, React.JS ,
+                      MongoDB, Express.JS , Node.JS, Sass,  Google auth
+                      Hosting in Digital Ocean.
+                      <br/>
+                      <a className="linkVisit" href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer'  >Visit</a>
+                      
+                      </p>  
+                      
+     
+       </div>
+      </div>
+      <div className="Projects">
+
+  {/* fusion */}
+
+        <div className="lostFusion">
+            <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594914934/Portfolio/lost_t7k2sv.png' className="img img-fluent" alt='Marysol'/>          
+        </div>
+        <div className="lostFusionLetter">
+        <h2 className=" text-center" style={{color:'#fff'}}> Lost fusion Rock Band </h2>
+        <p className="lostFusionD text-center">
+          A React JS static App using Sass,Bootstrap 4 ,Flexbox & Netlify
+        <br/>
+        <a className="linkVisit" href="https://lostfusion.com.mx" target='_blank' rel='noopener noreferrer'  >Visit</a>
+        
+        </p>  
+        
+
+</div>
+</div>
+
+      {/* <div className="quince">
+            
+            <div className="bodasLetter">
+            <h2 className="text-center" style={{color:'#000'}}> </h2>
+            <p className="quinceDescr text-center">
+              A React JS static App using Sass & Netlify
+                 <br/>
+                    <Link to='/quince' style={{color: '#000'}} className="text-center">Ver Más</Link>  
+                    </p>    
+            </div>
+            <div className="quince-img">
+                    <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594914934/Portfolio/lost_t7k2sv.png' className="" alt=''bodas/>          
+                </div>
+            </div> */}
+</div>
+
+
+
+
+
 
 
 <div className="portfolio" id='projects'>
@@ -163,24 +226,6 @@ const NewHome  = () => {
                         <a href="http://salonvenecia.com.mx" target='_blank' rel='noopener noreferrer'>Read more</a>
             </div>
         </div>    
-     <div className='container-card'>
-           <div className="card">
-              <img src={lost} alt='/' />
-              <h6 className="mb-1 mt-2">Lost fusion Rock Band</h6>
-                      <div className="figure2"/>
-                      <p className="description-t mb-5">A React JS App using Sass & Netlify</p>
-                        <a href="https://lostfusion.com.mx" target='_blank' rel='noopener noreferrer'>Read more</a>
-            </div>
-        </div>
-        <div className='container-card'>
-           <div className="card">
-              <img src={marysol} alt='/'/>
-                      <h6 className="mb-1 mt-2">Restaurant Mar y sol</h6>
-                      <div className="figure2"/>
-                       <p className="description-t mb-2">E-commerce MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS, Sass , Google auth & Sendgrid service. Hosting on Digital Ocean.</p>
-                        <a href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer' >Read more</a>
-            </div>
-        </div>
         
         <div className='container-card'>
            <div className="card">
@@ -260,7 +305,7 @@ const NewHome  = () => {
                     <i class="fas fa-envelope-open">
              
                        {/* <p className="text-p">Jobroman83@gmail.com</p> */}
-                      <a  className='mail' href="mailto:david.roman.works">david.roman.works@gmail.com</a>
+                      <a  className='mail' href="mailto:david.roman.works">Jobroman83@gmail.com</a>
                       <br/>
                      
                       </i>
