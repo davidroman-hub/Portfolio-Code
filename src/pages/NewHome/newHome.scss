@@ -570,12 +570,12 @@ margin-bottom: 30px;
 
 
 
-/////fusion
+/////venecia
 
 
 
 
-.quince{
+.venecia{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -592,20 +592,24 @@ margin-bottom: 30px;
         } 
 }
 
-.quinceDescr{
+.veneciaD{
     color:$grey3;
-    font-size: 30px;
+    font-size: 16px;
     font-family:$open;
     justify-content: justify;
     margin-left: 10px;
     @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
-        font-size:22px;
+        
+        font-size:16px;
         margin-top: 30px;
-        margin-left: 0px;
+        margin-bottom:30px;
+        margin-right: 10px;
+        margin-left:10px;
+        justify-content: justify;
        }
 }
 
-.quince-img{
+.venecia-img{
     margin-left: 200px;
     
     @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
@@ -616,13 +620,15 @@ margin-bottom: 30px;
     
     }
     
-    .quince-img img{
+    .venecia-img img{
       // align-self: center;
         margin-right: 50px;
         margin-top: 20px;
-        width: 550px;
+        margin-bottom: 20px;
+        width: 410px;
         @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
-        width:270px ;
+        width:300px ;
+        margin-right: 0px;
       //  margin-left: 100px;
         height: auto;
         
@@ -631,7 +637,18 @@ margin-bottom: 30px;
     }
 
 
-
+    .linkVisitWhite{
+        color:#000;
+        text-decoration: underline;
+        transition: 0.5s linear;
+        //style={{color:'#fff', textDecoration:'underline', textDecorationStyle:'solid'}}
+    }
+    .linkVisitWhite:hover{
+        color:$dorado;
+        text-decoration: underline;
+        transition: 0.5s linear;
+        //style={{color:'#fff', textDecoration:'underline', textDecorationStyle:'solid'}}
+    }
 
 
 

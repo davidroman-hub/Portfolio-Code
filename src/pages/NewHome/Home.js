@@ -190,20 +190,21 @@ const NewHome  = () => {
 </div>
 </div>
 
-      {/* <div className="quince">
+      <div className="venecia">
             
-            <div className="bodasLetter">
-            <h2 className="text-center" style={{color:'#000'}}> </h2>
-            <p className="quinceDescr text-center">
-              A React JS static App using Sass & Netlify
+            <div className="veneciaLetter">
+            <h2 className="text-center" style={{color:'#000'}}> Events Room "Venecia" Mexico City </h2>
+            <p className="veneciaD text-center">
+             MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS,<br/>
+             Sass & Sendgrid service. Hosting in Digital Ocean.
                  <br/>
-                    <Link to='/quince' style={{color: '#000'}} className="text-center">Ver Más</Link>  
+                   <a className="linkVisitWhite" href="http://salonvenecia.com.mx" target='_blank' rel='noopener noreferrer'  >Visit</a> 
                     </p>    
             </div>
-            <div className="quince-img">
-                    <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594914934/Portfolio/lost_t7k2sv.png' className="" alt=''bodas/>          
+            <div className="venecia-img">
+                    <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594984458/Portfolio/venecia_fo6lyg.png' className="" alt=''bodas/>          
                 </div>
-            </div> */}
+            </div>
 </div>
 
 
@@ -214,19 +215,9 @@ const NewHome  = () => {
 
 <div className="portfolio" id='projects'>
   <hr/>
-  <h4 className="text-center">PROJECTS</h4> 
-    <div className='figure2'/>
+
      <div className="Hobbies-icon">   
-     <div className='container-card'>
-           <div className="card">
-              <img src={venecia} alt='/' />
-              <h6 className="mb-1 mt-2">Events Room Venecia Mexico City</h6>
-                      <div className="figure2"/>
-                      <p className="description-t " style={{fontSize:'12px'}}>MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS, Sass  & Sendgrid service. Hosting on Digital Ocean.</p>
-                        <a href="http://salonvenecia.com.mx" target='_blank' rel='noopener noreferrer'>Read more</a>
-            </div>
-        </div>    
-        
+          
         <div className='container-card'>
            <div className="card">
               <img src={roger} alt='/' />
