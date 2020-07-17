@@ -167,7 +167,7 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
             <div className="desc">
             <h2 className="text-center" style={{color:'#000', fontFamily:'sans-serif'}}> Roger & Paq (DEMO) E-commerce </h2>
             <p className="veneciaD text-center">
-                E-Commerce MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS,<br/>
+                E-Commerce MERN App, using  React JS , Braintree ,Bootstrap 4 ,MongoDB , Express , Node JS,<br/>
                 Sass & Sendgrid service. Hosting in Digital Ocean. (DEMO)
                  <br/>
                    <a className="linkVisitWhite" href="http://68.183.135.73/shop" target='_blank' rel='noopener noreferrer'  >Visit</a> 
