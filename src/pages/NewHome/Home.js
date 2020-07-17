@@ -1,5 +1,6 @@
 import React,{Fragment, Component} from 'react'
 import './newHome.scss'
+import './list.css'
 import { Link, animateScroll as scroll } from "react-scroll";
 import resume from '../../shared/navbar/resume.pdf'
 // images skills
@@ -82,70 +83,14 @@ const NewHome  = () => {
               </section>
         </div> 
 
-          {/* GITHUB SECTION */}
-      
-        <div className="github-section text-center">
-          <br/>
-                      <h4 className="text-center">
-                        CHECK MY CODE ON GITHUB
-                        </h4>
-                        <div className="figure"/>  
-                        <p className="text-git">I have specialized mainly in MERN applications, 
-                          I invite you to visit my Github portfolio to see the process of each of my Rest API's and
-                           Applications I have created 
-                        </p>
-                     
-                        <i className="git-icon fab fa-github"></i>
-                        <br/>
-                        <a className="git-btn btn mb-4 "  href="https://github.com/davidroman-hub" target="_blank" rel="noopener noreferrer">Github</a>
-                    
-              </div>
+    
+     
 
             {/* SKILLS */}
 
-        <div className="services" id='skills'>
-                <br/>
-                <h4 className='text-center mb-4'>FRAMEWORKS AND PLATFORMS SKILLS</h4> 
-                <div className='figure2'/>
-                <div className="Hobbies-icon">
-                    <p className='H-icons'>
-                      <i className="frame fab fa-react"></i>
-                        <h5 className="text-center">React</h5>
-                    </p>
-                    <p className='H-icons'>
-                      <i className="frame fab fa-node-js"></i>
-                      <h5 className="text-center">Node JS</h5>
-                    </p>
-                   
-                    <p className='H-icons'>
-                      <i className="frame fab fa-digital-ocean ml-4"></i>
-                      <h5 className="text-center">Digital Ocean</h5>
-                    </p>
-                    {/* <p className='H-icons '>
-                      <i className="frame fab fa-aws"></i>
-                      <h5 className="text-center">Amazon Web S.</h5>
-                    </p>  */}
-                    <p className='H-icons'>
-                      <i className="frame fab fa-sass"></i>
-                      <h5 className="text-center">Sass</h5>
-                    </p>
-                    <br/>
-                     <p className='mongo '>
-                      <img src={mongo} alt='/' />
-                      <h5 className="text-center">Mongo DB</h5>
-                    </p>
-                    <p className='mongo '>
-                      <img src={next} alt='/' />
-                      <h5 className="text-center">Next JS</h5>
-                    </p> 
-                    <p className='mongo '>
-                    <img src={boots} alt='/' className="text-center"/>
-                      <h5 className="text-center">Bootstrap 4</h5>
-                    </p>
-                </div>
-        </div> 
+        
 
-        <h3 className="text-center" style={{fontFamily:'Open Sans Condensed,sans-serif'}}>PROJECTS</h3> 
+        <h3 className="text-center mt-3" style={{fontFamily:'Open Sans Condensed,sans-serif'}}>PROJECTS</h3> 
         <div className='figure2'/>
 
         {/* PORTFOLIO */}
@@ -190,6 +135,25 @@ const NewHome  = () => {
   </div>
   </div>
 
+         {/* GITHUB SECTION */}
+      
+         <div className="github-section text-center">
+          <br/>
+                      <h4 className="text-center">
+                        CHECK MY CODE ON GITHUB
+                        </h4>
+                        <div className="figure"/>  
+                        <p className="text-git">I have specialized mainly in MERN applications, 
+                          I invite you to visit my Github portfolio to see the process of each of my Rest API's and
+                           Applications I have created, and see more projects I’ve done. 
+                        </p>
+                     
+                        <i className="git-icon fab fa-github"></i>
+                        <br/>
+                        <a className="git-btn btn mb-4 "  href="https://github.com/davidroman-hub" target="_blank" rel="noopener noreferrer">Github</a>
+                    
+              </div>
+
       <div className="venecia">
             
             <div className="veneciaLetter">
@@ -223,11 +187,97 @@ const NewHome  = () => {
       </div>
 
 
+<div>
+<div className="services" id='skills'>
+                <br/>
+                <h4 className='text-center mb-4'>FRAMEWORKS AND PLATFORMS SKILLS</h4> 
+                <div className='figure2'/>
+                <div className="Hobbies-icon">
+                    <p className='H-icons'>
+                      <i className="frame fab fa-react"></i>
+                        <h5 className="text-center">React</h5>
+                    </p>
+                    <p className='H-icons'>
+                      <i className="frame fab fa-node-js"></i>
+                      <h5 className="text-center">Node JS</h5>
+                    </p>
+                   
+                    <p className='H-icons'>
+                      <i className="frame fab fa-digital-ocean ml-4"></i>
+                      <h5 className="text-center">Digital Ocean</h5>
+                    </p>
+                    {/* <p className='H-icons '>
+                      <i className="frame fab fa-aws"></i>
+                      <h5 className="text-center">Amazon Web S.</h5>
+                    </p>  */}
+                    <p className='H-icons'>
+                      <i className="frame fab fa-sass"></i>
+                      <h5 className="text-center">Sass</h5>
+                    </p>
+                    <br/>
+                     <p className='mongo '>
+                      <img src={mongo} alt='/' />
+                      <h5 className="text-center">Mongo DB</h5>
+                    </p>
+                    <p className='mongo '>
+                      <img src={next} alt='/' />
+                      <h5 className="text-center">Next JS</h5>
+                    </p> 
+                    <p className='mongo '>
+                    <img src={boots} alt='/' className="text-center"/>
+                      <h5 className="text-center">Bootstrap 4</h5>
+                    </p>
+                </div>
+        </div> 
+
+{/* <h3 className="text-center mt-3" style={{fontFamily:'Open Sans Condensed,sans-serif'}}>ANOTHER PROJECTS</h3> 
+        <div className='figure2'/> */}
+
+
+{/* <div class="tasks">
+  <input id='label-1' type='checkbox' />
+  <label for='label-1'>
+    <h2>Ultimate Auth
+      <span>MERN-application for login, with account activation using sendgrid, google, facebook,Bootstrap 4, React JS , MongoDB, Express , Node JS & Sass.</span>
+      <a className="linkList" href="http://68.183.135.73/shop" target='_blank' rel='noopener noreferrer'  >Visit</a>          
+    </h2>   
+  </label>
+
+  <input id='label-2' type='checkbox' />
+  <label for='label-2'>
+    <h2>e-mail processing 
+      <span>art&amp;&amp;code, personal</span>
+    </h2>   
+  </label>
+ 
+  <input id='label-3' type='checkbox'/>
+  <label for='label-3'>
+    <h2>Meditation
+      <span>out of my mind</span>
+    </h2>   
+  </label>
+
+  <input id='label-4' type='checkbox'/>
+  <label for='label-4'>
+    <h2>Code, Code, Code
+      <span>hit f12 &amp; let's get wasted</span>
+    </h2>   
+  </label>
+ 
+  <input id='label-5' type='checkbox'/>
+  <label for='label-5'>
+    <h2>Watch Screencast
+      <span>Ruby on Rails, yeah!</span>
+    </h2>   
+  </label>
+</div> */}
+
+</div>
 
 
 
 
-
+{/* 
   <div className="portfolio" id='projects'>
     <hr/>
 
@@ -273,7 +323,7 @@ const NewHome  = () => {
         </div>
        
         </div>
-      </div>        
+      </div>         */}
 
             {/* RESUME */}
 
