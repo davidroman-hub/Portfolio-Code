@@ -175,7 +175,7 @@ const NewHome  = () => {
   {/* fusion */}
 
         <div className="lostFusion">
-            <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594914934/Portfolio/lost_t7k2sv.png' className="img img-fluent" alt='Marysol'/>          
+            <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594914934/Portfolio/lost_t7k2sv.png' className="img img-fluent" alt='LostFusion'/>          
         </div>
         <div className="lostFusionLetter">
         <h2 className=" text-center" style={{color:'#fff'}}> Lost fusion Rock Band </h2>
@@ -187,8 +187,8 @@ const NewHome  = () => {
         </p>  
         
 
-</div>
-</div>
+  </div>
+  </div>
 
       <div className="venecia">
             
@@ -205,7 +205,22 @@ const NewHome  = () => {
                     <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594984458/Portfolio/venecia_fo6lyg.png' className="" alt=''bodas/>          
                 </div>
             </div>
-</div>
+            
+  </div>
+      <div className="Roger">
+            <div className="img-roger">
+            <img src="https://res.cloudinary.com/dm8dxwvix/image/upload/v1594986641/Portfolio/demo_y4mlo3.png" className="img img-fluent" alt='LostFusion'/>
+            </div>
+            <div className="desc">
+            <h2 className="text-center" style={{color:'#000', fontFamily:'sans-serif'}}> Roger & Paq (DEMO) E-commerce </h2>
+            <p className="veneciaD text-center">
+                E-Commerce MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS,<br/>
+                Sass & Sendgrid service. Hosting in Digital Ocean. (DEMO)
+                 <br/>
+                   <a className="linkVisitWhite" href="http://68.183.135.73/shop" target='_blank' rel='noopener noreferrer'  >Visit</a> 
+                    </p>    
+            </div>
+      </div>
 
 
 
@@ -213,20 +228,11 @@ const NewHome  = () => {
 
 
 
-<div className="portfolio" id='projects'>
-  <hr/>
+  <div className="portfolio" id='projects'>
+    <hr/>
 
      <div className="Hobbies-icon">   
           
-        <div className='container-card'>
-           <div className="card">
-              <img src={roger} alt='/' />
-              <h6 className="mb-1 mt-2">Roger & Paq</h6>
-                      <div className="figure2"/>
-                      <p className="description-t mb-2">E-commerce MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS, Sass & BRAINTREE service. Hosting on Digital Ocean.</p>
-                        <a href="http://68.183.135.73/shop" target='_blank' rel='noopener noreferrer'>Read more</a>
-            </div>
-        </div>
         
         <div className='container-card'>
            <div className="card">
