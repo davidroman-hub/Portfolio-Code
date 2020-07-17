@@ -3,6 +3,8 @@ import './newHome.scss'
 import './list.css'
 import { Link, animateScroll as scroll } from "react-scroll";
 import resume from '../../shared/navbar/resume.pdf'
+import {bounce}  from "react-animations"
+import styled, {keyframes} from 'styled-components'
 // images skills
 import mongo from './images/mongo.png'
 import next from './images/next.png'
@@ -20,6 +22,10 @@ import venecia from './images/venecia.PNG'
 //import venecia from './images/venecia.PNG'
 
 const NewHome  = () => { 
+
+const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
+
+
     return (
         <Fragment>
 
@@ -55,7 +61,7 @@ const NewHome  = () => {
                 <h2 className="h2-subtitle" id='about-us'>
                I GOT JUST WHAT YOU NEED
                 </h2>
-           <hr/>
+         
                 <div className="About-container">
                     <div className="about-us text-center">
                     Fullstack JS, Frontend & Backend Developer,
@@ -135,24 +141,7 @@ const NewHome  = () => {
   </div>
   </div>
 
-         {/* GITHUB SECTION */}
-      
-         <div className="github-section text-center">
-          <br/>
-                      <h4 className="text-center">
-                        CHECK MY CODE ON GITHUB
-                        </h4>
-                        <div className="figure"/>  
-                        <p className="text-git">I have specialized mainly in MERN applications, 
-                          I invite you to visit my Github portfolio to see the process of each of my Rest API's and
-                           Applications I have created, and see more projects I’ve done. 
-                        </p>
-                     
-                        <i className="git-icon fab fa-github"></i>
-                        <br/>
-                        <a className="git-btn btn mb-4 "  href="https://github.com/davidroman-hub" target="_blank" rel="noopener noreferrer">Github</a>
-                    
-              </div>
+       
 
       <div className="venecia">
             
@@ -230,111 +219,36 @@ const NewHome  = () => {
                 </div>
         </div> 
 
-{/* <h3 className="text-center mt-3" style={{fontFamily:'Open Sans Condensed,sans-serif'}}>ANOTHER PROJECTS</h3> 
-        <div className='figure2'/> */}
-
-
-{/* <div class="tasks">
-  <input id='label-1' type='checkbox' />
-  <label for='label-1'>
-    <h2>Ultimate Auth
-      <span>MERN-application for login, with account activation using sendgrid, google, facebook,Bootstrap 4, React JS , MongoDB, Express , Node JS & Sass.</span>
-      <a className="linkList" href="http://68.183.135.73/shop" target='_blank' rel='noopener noreferrer'  >Visit</a>          
-    </h2>   
-  </label>
-
-  <input id='label-2' type='checkbox' />
-  <label for='label-2'>
-    <h2>e-mail processing 
-      <span>art&amp;&amp;code, personal</span>
-    </h2>   
-  </label>
- 
-  <input id='label-3' type='checkbox'/>
-  <label for='label-3'>
-    <h2>Meditation
-      <span>out of my mind</span>
-    </h2>   
-  </label>
-
-  <input id='label-4' type='checkbox'/>
-  <label for='label-4'>
-    <h2>Code, Code, Code
-      <span>hit f12 &amp; let's get wasted</span>
-    </h2>   
-  </label>
- 
-  <input id='label-5' type='checkbox'/>
-  <label for='label-5'>
-    <h2>Watch Screencast
-      <span>Ruby on Rails, yeah!</span>
-    </h2>   
-  </label>
-</div> */}
-
 </div>
 
-
-
-
-{/* 
-  <div className="portfolio" id='projects'>
-    <hr/>
-
-     <div className="Hobbies-icon">   
-          
-        
-        <div className='container-card'>
-           <div className="card">
-              <img src={auth} alt='/' />
-              <h6 className="mb-1 mt-2">Ultimate Auth</h6>
-                      <div className="figure2"/>
-                      <p className="description-t mb-1">MERN-application for login , with account activation using sendgrid, google, facebook,Bootstrap 4, React JS , MongoDB, Express , Node JS & Sass. </p>
-                        <a href="http://206.189.227.84/" target='_blank' rel='noopener noreferrer'>Read more</a>
-            </div>
-        </div>
-        <div className='container-card'>
-           <div className="card">
-              <img src={ecom} alt='/' />
-              <h6 className="mb-1 mt-2">Simple E-commerce</h6>
-                      <div className="figure2"/>
-                      <p className="description-t mb-1">E-commerce MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS, Sass & BRAINTREE service. </p>
-                        <a href="https://github.com/davidroman-hub/ecommerce-front" target='_blank' rel='noopener noreferrer'>Read more</a>
-            </div>
-        </div>
-        <div className='container-card'>
-           <div className="card">
-              <img src={mine} alt='/' />
-              <h6 className="mb-1 mt-2">My Personal page</h6>
-                      <div className="figure2"/>
-                      <p className="description-t mb-5">A React JS App using Bootstrap 4, Sass, Netlify and Node Js  </p>
-                        <a href="https://github.com/davidroman-hub/Real-portafolio" target='_blank' rel='noopener noreferrer'>Read more</a>
-            </div>
-        </div>
-        
-        <div className='container-card'>
-           <div className="card">
-              <img src={abi} alt='/' />
-              <h6 className="mb-1 mt-2">Contemporary Artist Blog</h6>
-                      <div className="figure2"/>
-                      <p className="description-t mb-5">A React JS App using Sass & Netlify</p>
-                        <a href="https://romantic-sammet-63ec69.netlify.app/" target='_blank' rel='noopener noreferrer'>Read more</a>
-            </div>
-        </div>
-       
-        </div>
-      </div>         */}
 
             {/* RESUME */}
 
       <div className="resume">
         <br/>
-        <h4 className="info5 text-center">WOULD YOU LIKE TO CHECK OUT MY RESUME?</h4>
+        <h4 className="info5 text-center mt-4">WOULD YOU LIKE TO CHECK OUT MY RESUME?</h4>
         <div className="figure"/>
       <div className="spacer3"/>
        <a className="botton btn btn-xl" href={resume} download={resume} >YEAH!</a>
-      </div>
+          <h4 className='mt-3'>OR</h4>
+         <div className='social-networks'>
+           <div className='linkedin'>
+           <a  href="https://www.linkedin.com/in/job-david-roman-b7a2b217a/?locale=fr_FR" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin"></i>
+            </a>
+           </div>
+           <div className="githubS">
+             <Bounce>
+                  <a  href="https://github.com/davidroman-hub" target="_blank" rel="noopener noreferrer">
+                    <i className='fab fa-github' ></i>
+                  </a>
+             </Bounce>
+           
+           </div>
+         </div>
 
+      </div>
+     
 
           {/* Contact */}
 
@@ -367,14 +281,9 @@ const NewHome  = () => {
                       <br/>
                      
                       </i>
-                 
-                 {/* <i class="fab fa-whatsapp-square">
-                      <p>Phone</p>
-                      <p className="text-p">+33 7 87 42 20 67 (only calls- France)</p>
-               
-                   </i> */}
-
+                
              </div> 
+             
         
         
     </Fragment>
