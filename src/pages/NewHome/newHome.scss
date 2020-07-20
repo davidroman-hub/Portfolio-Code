@@ -55,10 +55,10 @@ font-family:'Pacifico', cursive ;
      color: #fff;
      background:black;
      background-image: url(./images/result.jpg);
-     background-size: 1500px;
+     background-size: 2000px;
      background-repeat: no-repeat;
      background-position: center; 
-    background-attachment: fixed; // we can move while the photo its static
+  //  background-attachment: fixed; // we can move while the photo its static
     box-shadow: inset 0 0 100px 150px rgba(0,0,0,.4);// shadow inside around the page
     filter: grayscale(50%);
 
