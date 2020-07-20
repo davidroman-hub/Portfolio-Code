@@ -105,7 +105,9 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
 
               {/* //MarySol */}
                       <div className="marysol">
+                        <a  href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer' >
                           <img src="https://res.cloudinary.com/dm8dxwvix/image/upload/v1594912435/Portfolio/marysol_fxgzeh.png" className="img img-fluent" alt='Marysol'/>          
+                        </a>
                       </div>
                       <div className="marysolLetter">
                       <h2 className=" text-center" style={{color:'#fff'}}> Restaurant <br/> Mar y Sol </h2>
@@ -126,7 +128,9 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
   {/* fusion */}
 
         <div className="lostFusion">
+          <a href="https://lostfusion.com.mx" target='_blank' rel='noopener noreferrer' >
             <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594914934/Portfolio/lost_t7k2sv.png' className="img img-fluent" alt='LostFusion'/>          
+          </a>
         </div>
         <div className="lostFusionLetter">
         <h2 className=" text-center" style={{color:'#fff'}}> Lost fusion Rock Band </h2>
@@ -155,14 +159,18 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
                     </p>    
             </div>
             <div className="venecia-img">
+              <a  href="http://salonvenecia.com.mx" target='_blank' rel='noopener noreferrer' >
                     <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594984458/Portfolio/venecia_fo6lyg.png' className="" alt=''bodas/>          
+              </a>  
                 </div>
             </div>
             
   </div>
       <div className="Roger">
             <div className="img-roger">
-            <img src="https://res.cloudinary.com/dm8dxwvix/image/upload/v1594986641/Portfolio/demo_y4mlo3.png" className="img img-fluent" alt='LostFusion'/>
+            <a href="http://68.183.135.73/shop" target='_blank' rel='noopener noreferrer' >
+              <img src="https://res.cloudinary.com/dm8dxwvix/image/upload/v1594986641/Portfolio/demo_y4mlo3.png" className="img img-fluent" alt='LostFusion'/>
+            </a>   
             </div>
             <div className="desc">
             <h2 className="text-center" style={{color:'#000', fontFamily:'sans-serif'}}> Roger & Paq (DEMO) E-commerce </h2>
