@@ -104,24 +104,22 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
             <div className="Projects">
 
               {/* //MarySol */}
-                      <div className="marysol">
-                        <a  href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer' >
-                          <img src="https://res.cloudinary.com/dm8dxwvix/image/upload/v1594912435/Portfolio/marysol_fxgzeh.png" className="img img-fluent" alt='Marysol'/>          
-                        </a>
-                      </div>
-                      <div className="marysolLetter">
-                      <h2 className=" text-center" style={{color:'#fff'}}> Restaurant <br/> Mar y Sol </h2>
-                      <p className="marysolD text-center">
-                      E-commerce MERN App, using Bootstrap 4, React.JS ,
-                      MongoDB, Express.JS , Node.JS, Sass,  Google auth
-                      Hosting in Digital Ocean.
-                      <br/>
-                      <a className="linkVisit" href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer'  >Visit</a>
-                      
-                      </p>  
-                      
-     
-       </div>
+              <div className="marysol">
+          <a href="https://lostfusion.com.mx" target='_blank' rel='noopener noreferrer' >
+            <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594912435/Portfolio/marysol_fxgzeh.png' className="img img-fluent" alt='LostFusion'/>          
+          </a>
+        </div>
+        <div className="marysolLetter">
+        <h2 className=" text-center" style={{color:'#fff'}}> Restaurant Mar y Sol  </h2>
+        <p className="marysolD text-center">
+        E-commerce MERN App, using Bootstrap 4, React.JS , MongoDB,<br/> Express.JS , Node.JS, Sass, Google auth Hosting in Digital Ocean.
+        <br/>
+        <a className="linkVisit" href="https://lostfusion.com.mx" target='_blank' rel='noopener noreferrer'  >Visit</a>
+        
+        </p>  
+        
+
+  </div>
       </div>
       <div className="Projects">
 
@@ -144,6 +142,8 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
 
   </div>
   </div>
+  
+  
 
        
 
