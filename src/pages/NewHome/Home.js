@@ -105,7 +105,7 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
 
               {/* //MarySol */}
               <div className="marysol">
-          <a href="https://lostfusion.com.mx" target='_blank' rel='noopener noreferrer' >
+          <a href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer' >
             <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594912435/Portfolio/marysol_fxgzeh.png' className="img img-fluent" alt='LostFusion'/>          
           </a>
         </div>
@@ -114,7 +114,7 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
         <p className="marysolD text-center">
         E-commerce MERN App, using Bootstrap 4, React.JS , MongoDB,<br/> Express.JS , Node.JS, Sass, Google auth Hosting in Digital Ocean.
         <br/>
-        <a className="linkVisit" href="https://lostfusion.com.mx" target='_blank' rel='noopener noreferrer'  >Visit</a>
+        <a className="linkVisit" href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer'  >Visit</a>
         
         </p>  
         
