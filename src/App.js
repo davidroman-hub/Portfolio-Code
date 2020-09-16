@@ -48,10 +48,10 @@ render(){
         <Navbar drawerClickHandler = {this.drawerToggleClickHandler}/>
         <SideDrawer show = {this.state.sideDrawerOpen}/>
         {backdrop}
-        <Route exact path='/' component={NewHome}></Route>
+        <Route exact path='/exx' component={NewHome}></Route>
         {/* <Route exact path='/ContactMe' component={ContactMe}></Route> */}
         <Route exact path='/home' component={NewHome}></Route>
-        <Route exact path='/modernhome' component={ModernHome}></Route>
+        <Route exact path='/' component={ModernHome}></Route>
         {/* <Route exact path='/AboutMe' component={AboutMe}></Route> */}
 
       {/* <FooterV></FooterV> */}
