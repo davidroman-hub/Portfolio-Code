@@ -285,9 +285,11 @@ color:$orange ;
 
 .About-container{
     display: flex;
-    font-size:1.7rem ;
+    font-size:1.5rem ;
      justify-content: center;
      align-items: center;
+     font-family: $open;
+     color:rgb(24, 16, 16);
 
     // flex-wrap: wrap;
      @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/

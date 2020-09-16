@@ -1,4 +1,17 @@
 
+$cursive: 'Pacifico', cursive ; 
+$open:'Open Sans Condensed', sans-serif;
+$titles:'Lexend Tera', sans-serif;
+
+$orange: #C84D44;
+$dorado:#d79e5b ;
+$beige:#FECEA8;
+$grey: rgba(255,255,255,.5);
+$brown:#83342E;
+$grey2:#A99590;
+$grey3:#343A40;
+$blue:#1464ba;
+
 header {
     width: 100%;
     height: 650px;
@@ -19,7 +32,7 @@ header {
     }
 
     .subtitulo{
-        font-size: 42px;
+        font-size: 60px;
         font-weight: 300;
         margin-bottom: 32px;
     }
@@ -69,10 +82,12 @@ header {
 
 .sobre-nosotros{
     text-align: center;
-    font-size: 56px;
+    font-size: 2rem;
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 300;
     height: auto;
+    font-family: $open;
+    color:$orange ;
 }
 
 .slogan{
@@ -133,12 +148,23 @@ header {
     height: 100%;
     background: #dcdad991;
 }
+.encima:hover{
+    background-color: #24292e96;
+    transition: .5s ease;
+}
+
+
+.encima h2:hover{
+    color:#fff ;
+    transition: .5s ease;
+}
 
 .encima h2{
     position: relative;
     top: 45%;
     text-align: center;
-    color: #fff;
+    color:rgb(24, 16, 16) ;
+    font-family: $open;
 
 }
 
@@ -149,6 +175,139 @@ header {
     top: 46%;
     width: 40px;
     height: 5px;
-    background: #fff;
+    background:rgb(24, 16, 16);
     margin: auto;
+}
+
+
+.cards-modernHome{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    //     @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+    //         flex-direction: column;
+    // }
+
+}
+
+.card-modernHome img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.card-modernHome{
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;;
+    box-shadow: 0px 0px 4px 0 #34495e93 ;
+}
+
+.fondo{
+    height: 900px;
+    position: relative;
+    background-image:url('./images//marketin.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+}
+
+.sesgoAbajo-unico{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width:0 0 25vh 100vw ;
+    border-style: solid;
+    border-color: transparent transparent #2c3e50 transparent ;
+}
+
+.headernew{
+    background-color: #1d1c24;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.description{
+    margin-top: 200px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        margin-top: 40px;
+        
+    }
+}
+
+.first{
+
+font-family: 'Open Sans', sans-serif;
+font-size: 75px;
+line-height: 80px;
+font-style: normal;
+font-weight: 700;
+letter-spacing: -3px;
+text-transform: none;
+@media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+    font-size: 45px;
+    
+}
+}
+
+.description{
+    margin-left: 20px;
+}
+
+.david{
+    margin-top: 20px;
+    margin-bottom:20px ;
+}
+.david img{
+    max-width: 400px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        max-width: 350px;
+    }
+}
+
+.projects{
+    background-color: #1d1b24;
+}
+
+
+.projects h1{
+color: #2a2830;
+font-family: 'Open Sans', sans-serif;
+font-size: 120px;
+line-height: 190px;
+font-style: normal;
+font-weight: 700;
+letter-spacing: -1px;
+
+}
+
+.project-photos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.services h4{
+    color: #2a2830;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80px;
+    line-height: 190px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        font-size: 45px;
+        line-height: 100px;
+    }
+    
 }
