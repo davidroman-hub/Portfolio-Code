@@ -13,6 +13,16 @@ import mongo from './images/mongo.png'
 import next from './images/next.png'
 import boots from './images/boots.png'
 
+//images portfolio
+
+import marysol from './images/marysol.PNG'
+import roger from './images/roger.PNG'
+import auth from './images/auth.PNG'
+import abi from './images/abi.PNG'
+import ecom from './images/ecommerce.PNG'
+import mine from './images/mine.PNG'
+import lost from './images/lost.PNG'
+import venecia from './images/venecia.PNG'
 
 const Header2 = () => (
     <div className='headernew'>
@@ -164,27 +174,41 @@ const Skills = () => (
 
 const Projects = () => (
     <section className='projects'>
-        <h1 className='ml-5'> <span style={{color:''}}>P</span>rojects  </h1>
+        
+        <h1 className='ml-5'> Projects  </h1>
         <div className='container'>
             <div className='project-photos'>
-                <div style={{color:'white'}}>
-                    1
+                <div className='MySPhoto'>
+                <a href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer' >
+                    <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594912435/Portfolio/marysol_fxgzeh.png' className="img img-fluent" alt='LostFusion'/>          
+                </a>
+                <p className='text-center mt-3' style={{color:'white', fontFamily:'sans-serif' , textAlign:'justify'}}> E-commerce MERN App, using Bootstrap 4, React.JS , MongoDB, Express.JS , Node.JS, Sass,<br/> Google auth Hosting in Digital Ocean. </p>
                 </div>
                 <div style={{color:'white'}}>
-                    <div>
-                        2
+                    <div className='fPhoto'>
+                    <a href="https://lostfusion.com.mx" target='_blank' rel='noopener noreferrer' >
+                        <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594914934/Portfolio/lost_t7k2sv.png' className="img img-fluent" alt='LostFusion'/>          
+                    </a>
+                    <p className="text-center">
+                        A React JS static App using Sass,Bootstrap 4 ,Flexbox & Netlify</p>
                     </div>
-                    <div>
-                        3
+                    <div className='fPhoto'>
+                    <a  href="http://salonvenecia.com.mx" target='_blank' rel='noopener noreferrer' >
+                        <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594984458/Portfolio/venecia_fo6lyg.png' className="" alt=''bodas/>          
+                    </a> 
+                    <p className='text-center ' style={{color:'white', fontFamily:'sans-serif'}}> MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS,
+                            Sass & Sendgrid service. Hosting in Digital Ocean.</p>
                     </div>
                 </div>
             </div>    
         </div>
+        <div className='sesgoAbajo'></div>
     </section>
 )
 
 const SobreNosotros = () => (
     <section className='miembros'>
+        
         <div className='contenedor'>
             <h2 className='sobre-nosotros'>Nuestro equipo</h2>
             <h3 className='slogan'>Conoce nuestro equipo de trabajo</h3>
@@ -206,6 +230,7 @@ const SobreNosotros = () => (
                 </div>
             </div>
         </div>
+    
     </section>
 )
 
@@ -243,7 +268,7 @@ const ModernHome = () => {
             <Header2/>
             <Main/>
             <Skills/>
-            {/* <Projects/> */}
+            <Projects/>
             {/* <SobreNosotros/> */}
             {/* <Fondo/> */}
             {/* <Footer/>  */}

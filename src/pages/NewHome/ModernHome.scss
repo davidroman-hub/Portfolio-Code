@@ -252,13 +252,13 @@ font-family: 'Open Sans', sans-serif;
 font-size: 75px;
 line-height: 80px;
 font-style: normal;
-font-weight: 700;
+//font-weight: 500;
 letter-spacing: -3px;
 text-transform: none;
 @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
     font-size: 45px;
     
-}
+    }
 }
 
 .description{
@@ -281,6 +281,10 @@ text-transform: none;
 }
 
 
+.projects .sesgoAbajo{
+    position: relative;
+}
+
 .projects h1{
 color: #2a2830;
 font-family: 'Open Sans', sans-serif;
@@ -289,25 +293,80 @@ line-height: 190px;
 font-style: normal;
 font-weight: 700;
 letter-spacing: -1px;
+@media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+    font-size: 60px;
+}
 
 }
 
 .project-photos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        flex-wrap: wrap;
+    }
+    
 }
 
 .services h4{
     color: #2a2830;
     font-family: 'Open Sans', sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 190px;
     font-style: normal;
-    font-weight: 700;
+    //font-weight: 700;
     letter-spacing: -1px;
     @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
         font-size: 45px;
-        line-height: 100px;
+        line-height: 50px;
     }
     
+}
+
+
+.MySPhoto img{
+
+    width: 800px;
+    border-radius: 10px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        width: 340px;
+    }
+    //height: auto;
+    //image-rendering: optimizeQuality;   
+}
+
+.MySPhoto img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.02);
+}
+
+.fPhoto p {
+    margin-left: 60px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        margin-left: 0px;
+    }
+}
+
+.fPhoto img{
+    width: 400px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    border-radius: 10px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        width: 340px;
+        margin-left: 0px;
+    }
+}
+
+.fPhoto img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.02);
 }

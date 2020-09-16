@@ -152,8 +152,8 @@ const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
             <div className="veneciaLetter">
             <h2 className="text-center" style={{color:'#000'}}> Events Room "Venecia" Mexico City </h2>
             <p className="veneciaD text-center">
-             MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS,<br/>
-             Sass & Sendgrid service. Hosting in Digital Ocean.
+             MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS,
+            Sass & Sendgrid service. Hosting in Digital Ocean.
                  <br/>
                    <a className="linkVisitWhite" href="http://salonvenecia.com.mx" target='_blank' rel='noopener noreferrer'  >Visit</a> 
                     </p>    
