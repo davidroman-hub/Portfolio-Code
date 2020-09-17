@@ -3,7 +3,7 @@ $cursive: 'Pacifico', cursive ;
 $open:'Open Sans Condensed', sans-serif;
 $titles:'Lexend Tera', sans-serif;
 
-$orange: #C84D44;
+$orange: #d04f46;
 $dorado:#d79e5b ;
 $beige:#FECEA8;
 $grey: rgba(255,255,255,.5);
@@ -60,6 +60,16 @@ header {
     border-color: transparent transparent #fff transparent ;
 }
 
+
+.sesgoAbajo2{
+    z-index: 10;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-width:0 0 25vh 100vw ;
+    border-style: solid;
+    border-color: transparent transparent #1464ba transparent ;
+}
 .sesgoArriba{
     z-index: 10;
     position: absolute;
@@ -271,6 +281,7 @@ text-transform: none;
 }
 .david img{
     max-width: 400px;
+    box-shadow: 10px 10px $orange;
     @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
         max-width: 350px;
     }
@@ -285,7 +296,17 @@ text-transform: none;
     position: relative;
 }
 
+
+.divisor1{
+    margin-bottom: 100px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        margin-bottom: 0px;
+        }
+}
+
 .projects h1{
+//margin-top: 50px;
+margin-bottom:100px ;
 color: #2a2830;
 font-family: 'Open Sans', sans-serif;
 font-size: 120px;
@@ -294,9 +315,9 @@ font-style: normal;
 font-weight: 700;
 letter-spacing: -1px;
 @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
-    font-size: 60px;
-}
-
+    font-size: 75px;
+    margin-bottom:50px ;
+    }
 }
 
 .project-photos{
@@ -306,6 +327,13 @@ letter-spacing: -1px;
         flex-wrap: wrap;
     }
     
+}
+
+.services{
+    margin-bottom: 100px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        margin-bottom: 10px;
+    }
 }
 
 .services h4{
@@ -323,6 +351,22 @@ letter-spacing: -1px;
     
 }
 
+.services h1{
+    
+    color: #d04f46;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+    font-size: 120px;
+    line-height: 190px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1px;
+    @media (max-width: 769px){ /* es solo para que se vea en modo movil usuarios*/
+        font-size: 90px;
+        margin-bottom: 0px;
+    }
+    
+}
 
 .MySPhoto img{
 
@@ -370,3 +414,5 @@ letter-spacing: -1px;
     -webkit-transform: scale(1.1);
 	transform: scale(1.02);
 }
+
+

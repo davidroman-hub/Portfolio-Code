@@ -1,6 +1,9 @@
 import React,{Fragment, Component} from 'react'
 import './ModernHome.scss'
 import { Link, animateScroll as scroll } from "react-scroll"
+import resume from '../../shared/navbar/resume.pdf'
+import {bounce}  from "react-animations"
+import styled, {keyframes} from 'styled-components'
 
 /// import images
 import developper from './images/developper.jpg'
@@ -65,6 +68,7 @@ const Main = () => (
     <main>
         <section className='acerca-de' id='about'>
             <div className='contenedor'>
+                <div className='divisor1'/>
                 <h2 className='sobre-nosotros'>I GOT JUST WHAT YOU NEED</h2>
                 {/* <h3 className='slogan'>Tirando codigo en la web</h3> */}
                 
@@ -126,8 +130,8 @@ const Main = () => (
 const Skills = () => (
     <div className="services" id='skills'>
                 <br/>
-                <h4 className='text-center mb-4 '>Frameworks and Platform skills</h4> 
-                <div className='figure2'/>
+                <h1 className='ml-5'> Skills  </h1> 
+                
                 <div className="Hobbies-icon">
                     <p className='H-icons'>
                         <i className="frame fab fa-react"></i>
@@ -174,15 +178,15 @@ const Skills = () => (
 
 const Projects = () => (
     <section className='projects'>
-        
-        <h1 className='ml-5'> Projects  </h1>
+        <div className='divisor1'>.</div>
+        <h1 className='ml-5'> Projects </h1>
         <div className='container'>
             <div className='project-photos'>
                 <div className='MySPhoto'>
                 <a href="http://cevicheriamarysol.com" target='_blank' rel='noopener noreferrer' >
-                    <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594912435/Portfolio/marysol_fxgzeh.png' className="img img-fluent" alt='LostFusion'/>          
+                    <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594912435/Portfolio/marysol_fxgzeh.png' className="img img-fluent" alt='MARYSOL'/>          
                 </a>
-                <p className='text-center mt-3' style={{color:'white', fontFamily:'sans-serif' , textAlign:'justify'}}> E-commerce MERN App, using Bootstrap 4, React.JS , MongoDB, Express.JS , Node.JS, Sass,<br/> Google auth Hosting in Digital Ocean. </p>
+                <p className='text-center mt-3' style={{color:'white', fontFamily:'sans-serif' , textAlign:'justify'}}>"RESTAURT MAR Y SOL" E-commerce MERN App, using Bootstrap 4, React.JS , MongoDB, Express.JS , Node.JS, Sass,<br/> Google auth Hosting in Digital Ocean. </p>
                 </div>
                 <div style={{color:'white'}}>
                     <div className='fPhoto'>
@@ -190,21 +194,72 @@ const Projects = () => (
                         <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594914934/Portfolio/lost_t7k2sv.png' className="img img-fluent" alt='LostFusion'/>          
                     </a>
                     <p className="text-center">
-                        A React JS static App using Sass,Bootstrap 4 ,Flexbox & Netlify</p>
+                        "LOST FUSION BAND" A React JS static App using Sass,Bootstrap 4 ,Flexbox & Netlify</p>
                     </div>
                     <div className='fPhoto'>
                     <a  href="http://salonvenecia.com.mx" target='_blank' rel='noopener noreferrer' >
                         <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1594984458/Portfolio/venecia_fo6lyg.png' className="" alt=''bodas/>          
                     </a> 
-                    <p className='text-center ' style={{color:'white', fontFamily:'sans-serif'}}> MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS,
-                            Sass & Sendgrid service. Hosting in Digital Ocean.</p>
+                    <p className='text-center ' style={{color:'white', fontFamily:'sans-serif'}}> "EVENT ROOM VENECIA" MERN App, using Bootstrap 4, React JS , MongoDB, Express , Node JS,
+                            Sass & Sendgrid service. Hosting in Digital Ocean.(Design provided for the client)</p>
                     </div>
                 </div>
             </div>    
         </div>
-        <div className='sesgoAbajo'></div>
+        <div className='container'>
+            <div className='project-photos'>
+                <div className='MySPhoto'>
+                <a href="https://clever-feynman-d1b56b.netlify.app/" target='_blank' rel='noopener noreferrer' >
+                    <img src='https://res.cloudinary.com/dm8dxwvix/image/upload/v1600372904/Portfolio/healing_uo4v1i.png' className="img img-fluent" alt='LostFusion'/>          
+                </a>
+                <p className='text-center mt-3' style={{color:'white', fontFamily:'sans-serif' , textAlign:'justify'}}> E-commerce MERN App, using Bootstrap 4, React.JS , MongoDB, Express.JS , Node.JS, Sass,<br/> Google auth Hosting in Digital Ocean. (ON DEVELOPING, ONLY PREVIEW)</p>
+                </div>
+                <div style={{color:'white'}}>
+                    <div className='fPhoto'>
+                    <a href="http://68.183.135.73/shop" target='_blank' rel='noopener noreferrer' >
+                        <img src={roger} className="img img-fluent" alt='roger'/>          
+                    </a>
+                    <p className="text-center">
+                    "ROGER & PAQ "
+                    E-Commerce MERN App, using  React JS , Braintree ,Bootstrap 4 ,MongoDB , Express , Node JS,<br/>
+                    Sass & Sendgrid service. Hosting in Digital Ocean. (DEMO)</p>
+                    </div>
+                    
+                </div>
+            </div>    
+        </div>
+        <div className='sesgoAbajo2'></div>
     </section>
 )
+
+const Bounce = styled.div`animation: 4s ${keyframes`${bounce}`} infinite`
+
+const ResumeComponent = () => (
+    <section className="resume">
+        <br/>
+        <h4 className="info5 text-center mt-4">WOULD YOU LIKE TO CHECK OUT MY RESUME?</h4>
+        <div className="figure"/>
+    <div className="spacer3"/>
+            <a className="botton btn btn-xl" href={resume} download={resume} >YEAH!</a>
+            <h4 className='mt-3'>OR</h4>
+        <div className='social-networks'>
+        <div className='linkedin'>
+            <a  href="https://www.linkedin.com/in/jobdavidroman/" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div className="githubS">
+            <Bounce>
+                <a  href="https://github.com/davidroman-hub" target="_blank" rel="noopener noreferrer">
+                    <i className='fab fa-github' ></i>
+                </a>
+            </Bounce>
+        </div>
+        </div>
+    </section>
+)
+
+
 
 const SobreNosotros = () => (
     <section className='miembros'>
@@ -269,6 +324,7 @@ const ModernHome = () => {
             <Main/>
             <Skills/>
             <Projects/>
+            <ResumeComponent/>
             {/* <SobreNosotros/> */}
             {/* <Fondo/> */}
             {/* <Footer/>  */}
