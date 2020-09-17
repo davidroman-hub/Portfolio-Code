@@ -130,7 +130,7 @@ const Main = () => (
 const Skills = () => (
     <div className="services" id='skills'>
                 <br/>
-                <h1 className='ml-5'> Skills  </h1> 
+                <h1 className='text-center'> Skills  </h1> 
                 
                 <div className="Hobbies-icon">
                     <p className='H-icons'>
@@ -179,7 +179,7 @@ const Skills = () => (
 const Projects = () => (
     <section className='projects'>
         <div className='divisor1'>.</div>
-        <h1 className='ml-5'> Projects </h1>
+        <h1 className='text-center'> Projects </h1>
         <div className='container'>
             <div className='project-photos'>
                 <div className='MySPhoto'>
